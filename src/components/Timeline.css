@@ -1,0 +1,49 @@
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 40px;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .timeline-bullet {
+    position: absolute;
+    left: -20px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    z-index: 1;
+  }
+  
+  .timeline-content {
+    padding-left: 30px;
+  }
+  
+  .timeline-line {
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    height: 100%;
+  }
+  
+  .timeline-item.right .timeline-content {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+  
+  .timeline-item.right .timeline-bullet {
+    left: auto;
+    right: -20px;
+  }
+  
+  .timeline-item.right .timeline-line {
+    left: auto;
+    right: -10px;
+  }
+  
